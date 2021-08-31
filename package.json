@@ -7,13 +7,14 @@
   "scripts": {
     "dev": "nodemon -r dotenv/config ./src ",
     "start": "node ./src/index.js",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
-    "watch": "NODE_OPTIONS=--experimental-vm-modules jest --watchAll"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "watch": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --watchAll"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
     "jest": "^27.1.0",
     "nodemon": "^2.0.12",
